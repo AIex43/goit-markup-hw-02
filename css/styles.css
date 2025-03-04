@@ -2,11 +2,8 @@
   --footer-text-color: #f4f4fd;
 }
 
-h1,
-h2,
-h3,
-p,
-ul {
+/* Скидання відступів для загальних елементів */
+h1, h2, h3, p, ul {
   margin: 0;
   padding: 0;
 }
@@ -20,6 +17,7 @@ a {
   color: inherit;
 }
 
+/* Основні стилі body */
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
@@ -27,6 +25,7 @@ body {
   color: #434455;
 }
 
+/* Контейнер (wrapper) для вирівнювання контенту */
 .container {
   width: 1158px;
   margin: 0 auto;
@@ -34,12 +33,14 @@ body {
   padding: 0 15px;
 }
 
+/* Зображення */
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
+/* Header (шапка) */
 .header {
   color: white;
   border-bottom: 1px solid #e7e9fc;
@@ -54,6 +55,7 @@ img {
   padding: 0 15px;
 }
 
+/* Навігація */
 .nav {
   display: flex;
   align-items: center;
@@ -80,6 +82,7 @@ img {
   color: #f4f4fd;
 }
 
+/* Меню навігації */
 .menu {
   display: flex;
   gap: 40px;
@@ -100,6 +103,7 @@ img {
   color: #404bbf;
 }
 
+/* Контакти */
 .contacts {
   display: flex;
   gap: 40px;
@@ -121,6 +125,7 @@ img {
   font-style: normal;
 }
 
+/* Візуально прихований елемент (для доступності) */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -134,6 +139,7 @@ img {
   overflow: hidden;
 }
 
+/* Hero секція */
 .hero {
   background-color: #2e2f42;
   color: white;
@@ -174,6 +180,7 @@ img {
   background-color: #404bbf;
 }
 
+/* Services секція */
 .services {
   padding: 120px 0;
 }
@@ -205,6 +212,7 @@ img {
   color: #434455;
 }
 
+/* Team секція */
 .team {
   padding: 120px 0;
   background-color: #f4f4fd;
@@ -255,6 +263,7 @@ img {
   color: #434455;
 }
 
+/* Portfolio секція */
 .portfolio {
   padding: 120px 0;
 }
@@ -303,6 +312,7 @@ img {
   color: #434455;
 }
 
+/* Footer секція */
 .footer {
   background-color: #2e2f42;
   color: white;
@@ -320,4 +330,3 @@ img {
 .footer .logo {
   margin-bottom: 16px;
 }
-
