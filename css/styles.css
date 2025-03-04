@@ -2,7 +2,7 @@
   --footer-text-color: #f4f4fd;
 }
 
-/* Скидання відступів для загальних елементів */
+/* Загальні скидання відступів */
 h1, h2, h3, p, ul {
   margin: 0;
   padding: 0;
@@ -17,7 +17,7 @@ a {
   color: inherit;
 }
 
-/* Основні стилі body */
+/* Основний стиль body */
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
@@ -25,7 +25,7 @@ body {
   color: #434455;
 }
 
-/* Контейнер (wrapper) для вирівнювання контенту */
+/* Контейнер для вирівнювання контенту */
 .container {
   width: 1158px;
   margin: 0 auto;
@@ -40,9 +40,8 @@ img {
   height: auto;
 }
 
-/* Header (шапка) */
+/* HEADER */
 .header {
-  color: white;
   border-bottom: 1px solid #e7e9fc;
   padding: 0 15px;
 }
@@ -52,7 +51,6 @@ img {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 0 15px;
 }
 
 /* Навігація */
@@ -75,14 +73,16 @@ img {
 
 .logo span,
 .logo-span {
+  /* Для логотипу в хедері базовий колір */
   color: #2e2f42;
 }
 
+/* Якщо логотип знаходиться у футері – колір span має бути іншим */
 .footer .logo span {
   color: #f4f4fd;
 }
 
-/* Меню навігації */
+/* Меню */
 .menu {
   display: flex;
   gap: 40px;
@@ -125,24 +125,19 @@ img {
   font-style: normal;
 }
 
-/* Візуально прихований елемент (для доступності) */
+/* Елемент для доступності */
 .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
   overflow: hidden;
+  clip: rect(0, 0, 0, 0);
 }
 
-/* Hero секція */
+/* PЕРША СЕКЦІЯ (hero) */
 .hero {
   background-color: #2e2f42;
-  color: white;
   text-align: center;
   padding: 188px 0;
 }
@@ -153,26 +148,19 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin-bottom: 20px;
-  max-width: 496px;
-  margin: 0 auto;
 }
 
 .hero-button {
-  display: block;
-  margin: 0 auto;
-  min-width: 169px;
-  height: 56px;
-  border: none;
   background-color: #4d5ae5;
-  border-radius: 4px;
-  cursor: pointer;
-  font-family: inherit;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
+  cursor: pointer;
+  border: none;
+  /* Без зайвих стилів, лише необхідне */
 }
 
 .hero-button:hover,
@@ -180,7 +168,7 @@ img {
   background-color: #404bbf;
 }
 
-/* Services секція */
+/* ДРУГА СЕКЦІЯ (services) */
 .services {
   padding: 120px 0;
 }
@@ -197,12 +185,12 @@ img {
 }
 
 .services-title {
-  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .services-desc {
@@ -212,20 +200,20 @@ img {
   color: #434455;
 }
 
-/* Team секція */
+/* ТРЕТЯ СЕКЦІЯ (team) */
 .team {
-  padding: 120px 0;
   background-color: #f4f4fd;
+  padding: 120px 0;
 }
 
 .team-title {
-  text-align: center;
-  margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
+  text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
 .team-list {
@@ -240,42 +228,42 @@ img {
 }
 
 .team-info {
-  padding: 32px 0;
-  border: 1px solid #e7e9fc;
   background-color: #ffffff;
+  border: 1px solid #e7e9fc;
+  padding: 32px 0;
 }
 
 .team-name {
-  text-align: center;
-  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .team-role {
-  text-align: center;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  text-align: center;
 }
 
-/* Portfolio секція */
+/* ЧЕТВЕРТА СЕКЦІЯ (portfolio) */
 .portfolio {
   padding: 120px 0;
 }
 
 .portfolio-title {
-  text-align: center;
-  margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
+  text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
 .portfolio-list {
@@ -288,21 +276,21 @@ img {
 .portfolio-item {
   width: calc((100% - 48px) / 3);
   box-sizing: border-box;
-  overflow: hidden;
   background-color: #ffffff;
   text-align: center;
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+  overflow: hidden;
 }
 
 .portfolio-name {
-  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .portfolio-category {
@@ -312,21 +300,28 @@ img {
   color: #434455;
 }
 
-/* Footer секція */
+/* FOOTER */
 .footer {
   background-color: #2e2f42;
-  color: white;
   padding: 100px 0;
+}
+
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-text {
   font-size: 1rem;
-  max-width: 264px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--footer-text-color);
-}
-
-.footer .logo {
-  margin-bottom: 16px;
+  max-width: 264px;
 }
