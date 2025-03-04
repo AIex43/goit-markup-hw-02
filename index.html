@@ -3,184 +3,128 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>webstudio</title>
-    <!-- Google Fonts: Roboto (400,500,700) та Raleway (700) -->
+    <title>WebStudio</title>
+    <!-- Підключення Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Raleway:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <!-- Normalize -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    />
-    <!-- Основний файл стилів -->
-    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Підключення зовнішніх стилів -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- HEADER -->
-    <header class="hdr">
-      <div class="cnt hdr-cnt">
-        <nav class="nav">
-          <a href="./index.html" class="lg">
-            web<span class="lgsp">studio</span>
-          </a>
-          <ul class="mnu">
-            <li class="mnu-itm">
-              <a href="./index.html" class="mnu-lnk">studio</a>
-            </li>
-            <li class="mnu-itm">
-              <a href="#" class="mnu-lnk">portfolio</a>
-            </li>
-            <li class="mnu-itm">
-              <a href="#" class="mnu-lnk">contacts</a>
-            </li>
-          </ul>
-        </nav>
-        <address class="addr">
-          <ul class="ctcs">
-            <li class="ctc-itm">
-              <a href="mailto:info@devstudio.com" class="ctc-lnk">info@devstudio.com</a>
-            </li>
-            <li class="ctc-itm">
-              <a href="tel:+110001111111" class="ctc-lnk">+11 (000) 111-11-11</a>
-            </li>
-          </ul>
-        </address>
-      </div>
+    <!-- Header -->
+    <header>
+      <nav>
+        <a class="logo" href="./index.html">WebStudio</a>
+        <ul class="menu">
+          <li>
+            <a class="menu-item" href="">Studio</a>
+          </li>
+          <li>
+            <a class="menu-item" href="">Portfolio</a>
+          </li>
+          <li>
+            <a class="menu-item" href="">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <address class="contacts">
+        <ul>
+          <li>
+            <a class="contact-link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="contact-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
+        </ul>
+      </address>
     </header>
 
-    <!-- MAIN -->
+    <!-- Main -->
     <main>
-      <!-- HERO SECTION -->
-      <section id="hero" class="sec hr">
-        <div class="cnt">
-          <h1 class="hr-tl">effective solutions for your business</h1>
-          <button type="button" class="hr-btn">order service</button>
-        </div>
+      <!-- Секція 1: Геро (Hero) -->
+      <section class="hero">
+        <h1 class="hero-title">
+          Effective Solutions for Your Business
+        </h1>
+        <button type="button" class="hero-btn">Order Service</button>
       </section>
 
-      <!-- SERVICES SECTION -->
-      <section id="services" class="sec srv">
-        <div class="cnt">
-          <h2 class="vhid">our services</h2>
-          <ul class="srv-lst">
-            <li class="srv-itm">
-              <h3 class="srv-tl">strategy</h3>
-              <p class="srv-dsc">
-                our goal is to identify the business problem to walk away with the perfect and creative solution.
-              </p>
-            </li>
-            <li class="srv-itm">
-              <h3 class="srv-tl">punctuality</h3>
-              <p class="srv-dsc">
-                bring the key message to the brand's audience for the best price within the shortest possible time.
-              </p>
-            </li>
-            <li class="srv-itm">
-              <h3 class="srv-tl">diligence</h3>
-              <p class="srv-dsc">
-                research and confirm brands with the strongest digital growth opportunities and minimize risk.
-              </p>
-            </li>
-            <li class="srv-itm">
-              <h3 class="srv-tl">technologies</h3>
-              <p class="srv-dsc">
-                design practice focused on digital experiences. we bring forth a deep passion for problem-solving.
-              </p>
-            </li>
-          </ul>
-        </div>
+      <!-- Секція 2: Особливості (Features) -->
+      <section class="features">
+        <h2 class="features-title">Our Features</h2>
+        <ul class="features-list">
+          <li class="feature-item">
+            <h3 class="feature-title">Strategy</h3>
+            <p class="feature-desc">
+              Our goal is to identify the business problem to walk away with
+              the perfect and creative solution.
+            </p>
+          </li>
+          <li class="feature-item">
+            <h3 class="feature-title">Punctuality</h3>
+            <p class="feature-desc">
+              Bring the key message to the brand's audience for the best price
+              within the shortest possible time.
+            </p>
+          </li>
+          <li class="feature-item">
+            <h3 class="feature-title">Diligence</h3>
+            <p class="feature-desc">
+              Research and confirm brands with the strongest digital growth
+              opportunities and minimize risk.
+            </p>
+          </li>
+          <li class="feature-item">
+            <h3 class="feature-title">Technologies</h3>
+            <p class="feature-desc">
+              Design practice focused on digital experiences. We bring forth a
+              deep passion for problem-solving.
+            </p>
+          </li>
+        </ul>
       </section>
 
-      <!-- TEAM SECTION -->
-      <section id="team" class="sec tm">
-        <div class="cnt">
-          <h2 class="tm-tl">our team</h2>
-          <ul class="tm-lst">
-            <li class="tm-itm">
-              <img src="./images/img4.jpg" alt="mark guerrero" width="264" />
-              <div class="tm-inf">
-                <h3 class="tm-nm">mark guerrero</h3>
-                <p class="tm-rl">product designer</p>
-              </div>
-            </li>
-            <li class="tm-itm">
-              <img src="./images/img3.jpg" alt="tom ford" width="264" />
-              <div class="tm-inf">
-                <h3 class="tm-nm">tom ford</h3>
-                <p class="tm-rl">frontend developer</p>
-              </div>
-            </li>
-            <li class="tm-itm">
-              <img src="./images/img2.jpg" alt="camila garcia" width="264" />
-              <div class="tm-inf">
-                <h3 class="tm-nm">camila garcia</h3>
-                <p class="tm-rl">marketing</p>
-              </div>
-            </li>
-            <li class="tm-itm">
-              <img src="./images/img.jpg" alt="daniel wilson" width="264" />
-              <div class="tm-inf">
-                <h3 class="tm-nm">daniel wilson</h3>
-                <p class="tm-rl">ui designer</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!-- PORTFOLIO SECTION -->
-      <section id="portfolio" class="sec pf">
-        <div class="cnt">
-          <h2 class="pf-tl">our portfolio</h2>
-          <ul class="pf-lst">
-            <li class="pf-itm">
-              <img src="./images/img6.jpg" alt="banking app" width="360" />
-              <h3 class="pf-nm">banking app</h3>
-              <p class="pf-cat">app</p>
-            </li>
-            <li class="pf-itm">
-              <img src="./images/img5.jpg" alt="cashless payment" width="360" />
-              <h3 class="pf-nm">cashless payment</h3>
-              <p class="pf-cat">marketing</p>
-            </li>
-            <li class="pf-itm">
-              <img src="./images/img10.jpg" alt="meditation app" width="360" />
-              <h3 class="pf-nm">meditation app</h3>
-              <p class="pf-cat">app</p>
-            </li>
-            <li class="pf-itm">
-              <img src="./images/img7.jpg" alt="taxi service" width="360" />
-              <h3 class="pf-nm">taxi service</h3>
-              <p class="pf-cat">marketing</p>
-            </li>
-            <li class="pf-itm">
-              <img src="./images/img8.jpg" alt="screen illustrations" width="360" />
-              <h3 class="pf-nm">screen illustrations</h3>
-              <p class="pf-cat">design</p>
-            </li>
-            <li class="pf-itm">
-              <img src="./images/img9.jpg" alt="online courses" width="360" />
-              <h3 class="pf-nm">online courses</h3>
-              <p class="pf-cat">marketing</p>
-            </li>
-          </ul>
-        </div>
+      <!-- Секція 3: Команда (Team) -->
+      <section class="team">
+        <h2 class="team-title">Our Team</h2>
+        <ul class="team-list">
+          <li class="team-member">
+            <img src="./images/mark.jpg" alt="Mark Guerrero" width="264" />
+            <h3 class="member-name">Mark Guerrero</h3>
+            <p class="member-role">Product Designer</p>
+          </li>
+          <li class="team-member">
+            <img src="./images/tom.jpg" alt="Tom Ford" width="264" />
+            <h3 class="member-name">Tom Ford</h3>
+            <p class="member-role">Frontend Developer</p>
+          </li>
+          <li class="team-member">
+            <img src="./images/camila.jpg" alt="Camila Garcia" width="264" />
+            <h3 class="member-name">Camila Garcia</h3>
+            <p class="member-role">Marketing</p>
+          </li>
+          <li class="team-member">
+            <img src="./images/daniel.jpg" alt="Daniel Wilson" width="264" />
+            <h3 class="member-name">Daniel Wilson</h3>
+            <p class="member-role">UI Designer</p>
+          </li>
+        </ul>
       </section>
     </main>
 
-    <!-- FOOTER -->
-    <footer class="ftr" id="contacts">
-      <div class="cnt">
-        <a href="./index.html" class="ftr-lg">
-          web<span class="lgsp">studio</span>
-        </a>
-        <p class="ftr-txt">
-          increase the flow of customers and sales for your business with digital marketing &amp; growth solutions.
-        </p>
-      </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <a class="footer-logo" href="./index.html">WebStudio</a>
+      <p class="footer-text">
+        Increase the flow of customers and sales for your business with digital
+        marketing &amp; growth solutions.
+      </p>
     </footer>
   </body>
 </html>
+
