@@ -1,4 +1,8 @@
 /* Загальні стилі */
+:root {
+  --footer-text-color: #F4F4FD;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -8,7 +12,7 @@ body {
 
 /* Стили для header */
 header {
-  /* Можна додати відступи за потреби, використовуючи margin (padding не використовуємо) */
+  /* Відступи можна додати за потреби */
 }
 
 nav {
@@ -24,6 +28,10 @@ nav {
   text-transform: uppercase;
   color: #4d5ae5;
   text-decoration: none;
+}
+
+.logo span {
+  color: #2e2f42;
 }
 
 .menu {
@@ -48,6 +56,10 @@ nav {
 .contacts ul {
   list-style: none;
   margin: 0;
+}
+
+.contacts {
+  font-style: normal;
 }
 
 .contact-link {
@@ -147,6 +159,8 @@ nav {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
   color: #2e2f42;
   margin: 20px 0;
 }
@@ -177,6 +191,40 @@ nav {
   margin: 10px 0;
 }
 
+/* Секція 4: Проекти */
+.projects-section {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.projects-list {
+  list-style: none;
+  margin: 0 auto;
+  /* Заборонені властивості (display, flex-wrap, gap, justify-content, padding) видалено */
+}
+
+.project-item {
+  text-align: center;
+  /* Властивість width видалено */
+}
+
+.project-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-top: 10px;
+}
+
+.project-desc {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  margin-top: 5px;
+}
+
 /* Footer */
 .footer {
   background-color: #2e2f42;
@@ -195,53 +243,13 @@ nav {
   text-decoration: none;
 }
 
+.footer-logo span {
+  color: #f4f4fd;
+}
+
 .footer-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #f4f4fd;
+  color: var(--footer-text-color);
   margin: 10px 0;
-}
-/* Стилі заголовка секції */
-.team-title {
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2e2f42;
-}
-
-/* Стилі списку проектів */
-.projects-list {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 0;
-}
-
-/* Стилі для кожного проекту */
-.project-item {
-    text-align: center;
-    width: 360px;
-}
-
-/* Стилі для заголовків проектів */
-.project-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    margin-top: 10px;
-}
-
-/* Стилі для параграфів проектів */
-.project-desc {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-    margin-top: 5px;
 }
