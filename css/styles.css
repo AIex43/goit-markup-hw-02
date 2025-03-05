@@ -200,12 +200,10 @@ nav {
 .projects-list {
   list-style: none;
   margin: 0 auto;
-  /* Заборонені властивості (display, flex-wrap, gap, justify-content, padding) видалено */
 }
 
 .project-item {
   text-align: center;
-  /* Властивість width видалено */
 }
 
 .project-title {
