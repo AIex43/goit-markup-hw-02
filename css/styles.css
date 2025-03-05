@@ -1,4 +1,4 @@
-/* Загальні стилі */
+
 :root {
   --footer-text-color: #F4F4FD;
 }
@@ -10,13 +10,13 @@ body {
   margin: 0;
 }
 
-/* Стили для header */
+
 header {
-  /* Відступи можна додати за потреби */
+
 }
 
 nav {
-  /* Базова стилізація навігації */
+
 }
 
 .logo {
@@ -75,7 +75,7 @@ nav {
   color: #404bbf;
 }
 
-/* Секція 1: Геро */
+
 .hero {
   background-color: #2e2f42;
   text-align: center;
@@ -107,7 +107,7 @@ nav {
   background-color: #404BBF;
 }
 
-/* Секція 2: Особливості */
+
 .features {
   background-color: #F4F4FD;
   text-align: center;
@@ -149,10 +149,11 @@ nav {
   margin: 10px 0;
 }
 
-/* Секція 3: Команда */
+
 .team {
   text-align: center;
   margin: 20px 0;
+  background-color: #F4F4FD
 }
 
 .team-title {
@@ -172,6 +173,7 @@ nav {
 
 .team-member {
   margin-bottom: 20px;
+  background-color: #FFFFFF
 }
 
 .member-name {
@@ -191,10 +193,11 @@ nav {
   margin: 10px 0;
 }
 
-/* Секція 4: Проекти */
+
 .projects-section {
   margin: 20px 0;
   text-align: center;
+  background-color: #FFFFFF
 }
 
 .projects-list {
@@ -223,7 +226,7 @@ nav {
   margin-top: 5px;
 }
 
-/* Footer */
+
 .footer {
   background-color: #2e2f42;
   text-align: center;
